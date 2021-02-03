@@ -287,7 +287,8 @@ export default class App extends Component {
               <use xlinkHref={`${boxIcon}`} className="todo__box"></use>
               <use xlinkHref="#todo__check" className="todo__check"></use>
             </svg>
-            <div className='todo-list-title'>
+                  <div className='todo-list-title'>
+              <code>
               <ContentEditable
                 tagName='span'
                 editKey={id}
@@ -295,6 +296,7 @@ export default class App extends Component {
                 html={data.title}
                 // onChange={this.handleDataChange} // save on change
               />
+              </code>
             </div>
           </label>
           {deleteButton}
